@@ -1,0 +1,209 @@
+# Cursor Rules — Landing Page
+
+## 1. Clean Code
+
+* Escribir código limpio, simple, legible y mantenible.
+* Priorizar claridad sobre soluciones complejas o innecesariamente abstractas.
+* Evitar código duplicado (DRY).
+* Cada función debe tener una única responsabilidad.
+* Evitar funciones, componentes o archivos excesivamente grandes.
+* Utilizar nombres descriptivos y consistentes para variables, funciones, componentes y archivos.
+* Evitar nombres genéricos como `data`, `item`, `thing`, `handleStuff`, etc. cuando exista una alternativa más descriptiva.
+* No agregar lógica innecesaria ni sobreingeniería.
+* Eliminar código muerto, imports sin utilizar, variables sin uso y comentarios obsoletos.
+* Los comentarios deben explicar únicamente decisiones no obvias; no comentar código que ya sea autoexplicativo.
+
+## 2. Componentización
+
+* Dividir la landing en componentes reutilizables y con responsabilidades claras.
+
+* No crear un único componente gigante para toda la página.
+
+* Cada sección principal debe ser un componente independiente.
+
+* Ejemplo de estructura:
+
+  * `Header`
+  * `Hero`
+  * `About`
+  * `Services`
+  * `Benefits`
+  * `Testimonials`
+  * `FAQ`
+  * `CTA`
+  * `Footer`
+
+* Crear componentes reutilizables para elementos repetidos como botones, cards, badges, inputs, títulos de sección, etc.
+
+* Evitar componentes excesivamente pequeños cuando no aporten reutilización ni claridad.
+
+* Mantener la lógica específica de cada sección dentro de su propio componente.
+
+* Si una sección crece demasiado, dividirla en subcomponentes.
+
+* No duplicar markup para elementos visualmente similares.
+
+## 3. Estructura del proyecto
+
+Mantener una estructura clara y escalable.
+
+Ejemplo:
+
+```text
+src/
+├── components/
+│   ├── ui/
+│   ├── sections/
+│   └── layout/
+├── assets/
+├── styles/
+├── data/
+├── utils/
+└── pages/
+```
+
+* `components/ui`: componentes genéricos y reutilizables.
+* `components/sections`: secciones específicas de la landing.
+* `components/layout`: Header, Footer y estructura general.
+* `data`: contenido estático que pueda separarse del markup.
+* `utils`: funciones auxiliares reutilizables.
+* No mezclar responsabilidades entre carpetas.
+
+## 4. Separación de contenido y lógica
+
+* Evitar hardcodear grandes cantidades de contenido directamente dentro del template.
+* Cuando exista una lista de elementos repetitivos, utilizar arrays/objetos y renderizarlos dinámicamente.
+* Mantener datos, contenido y configuración separados de la estructura visual cuando esto mejore la mantenibilidad.
+* No duplicar contenido para desktop/mobile; utilizar CSS y responsive design.
+
+## 5. Diseño y UI
+
+* Mantener consistencia visual en toda la landing.
+* Reutilizar tokens de diseño para colores, tipografías, spacing, border-radius y sombras.
+* No introducir colores, tamaños o estilos arbitrarios si ya existe un sistema visual definido.
+* Priorizar una estética limpia, moderna y profesional.
+* Evitar exceso de efectos, animaciones, gradients o elementos decorativos que no aporten valor.
+* El diseño debe sentirse intencional y no generado automáticamente.
+
+## 6. Responsive Design
+
+La landing debe funcionar correctamente en:
+
+* Mobile
+* Tablet
+* Desktop
+* Pantallas grandes
+
+Reglas:
+
+* Mobile-first cuando sea apropiado.
+* No utilizar tamaños fijos que rompan el layout.
+* Evitar `width`/`height` rígidos innecesarios.
+* Utilizar `flex`, `grid`, `max-width`, `clamp()`, `min()`, `max()` y unidades relativas cuando corresponda.
+* Revisar especialmente navegación, hero, imágenes, grids, cards y formularios en mobile.
+* No ocultar contenido importante únicamente para solucionar problemas de responsive.
+
+## 7. Accesibilidad
+
+* Utilizar HTML semántico.
+* Usar correctamente `header`, `nav`, `main`, `section`, `article`, `footer`, etc.
+* Todas las imágenes importantes deben tener `alt` descriptivo.
+* Los elementos interactivos deben ser accesibles mediante teclado.
+* No utilizar `<div>` como botón cuando exista `<button>`.
+* Mantener contraste suficiente entre texto y fondo.
+* Los headings deben mantener una jerarquía lógica.
+* Los links y botones deben tener textos claros.
+
+## 8. Performance
+
+* Optimizar imágenes y utilizar formatos modernos cuando sea posible.
+* Evitar cargar recursos innecesarios.
+* Lazy-load para imágenes que no sean críticas.
+* No agregar librerías externas si una solución nativa/simple es suficiente.
+* Evitar JavaScript innecesario para efectos que puedan resolverse con CSS.
+* Evitar re-renders o cálculos innecesarios.
+* Las animaciones deben ser fluidas y no afectar significativamente el rendimiento.
+* Priorizar `transform` y `opacity` para animaciones.
+* No bloquear el renderizado inicial con recursos innecesarios.
+
+## 9. SEO
+
+La landing debe tener una estructura SEO correcta:
+
+* Un único `h1` principal.
+* Jerarquía correcta de headings.
+* `title` y `meta description` adecuados.
+* HTML semántico.
+* URLs limpias cuando corresponda.
+* `alt` descriptivos.
+* Open Graph cuando sea necesario.
+* Evitar utilizar texto importante únicamente dentro de imágenes.
+
+## 10. Animaciones
+
+* Las animaciones deben ser sutiles, fluidas y con propósito.
+* No animar todos los elementos de la página.
+* Evitar animaciones excesivamente largas.
+* Respetar `prefers-reduced-motion`.
+* Priorizar animaciones de entrada, hover y scroll que mejoren la experiencia.
+* No utilizar animaciones que dificulten la lectura o navegación.
+* Si existe una librería de animaciones en el proyecto, reutilizarla en lugar de introducir otra.
+
+## 11. Formularios e interacciones
+
+* Validar inputs correctamente.
+* Mostrar estados claros: loading, success, error y disabled.
+* Los errores deben ser comprensibles para el usuario.
+* No permitir múltiples envíos accidentales.
+* Mantener la lógica de formularios separada de la presentación cuando sea necesario.
+
+## 12. Arquitectura
+
+Antes de crear código nuevo:
+
+1. Revisar los componentes existentes.
+2. Reutilizar componentes cuando sea posible.
+3. Revisar si ya existe una utilidad o función equivalente.
+4. Mantener la arquitectura actual del proyecto.
+5. Evitar introducir dependencias nuevas sin necesidad.
+
+No modificar archivos que no sean necesarios para resolver la tarea.
+
+## 13. TypeScript
+
+Cuando el proyecto utilice TypeScript:
+
+* Mantener tipado fuerte.
+* Evitar `any`.
+* Crear interfaces/types claros para props y datos.
+* No utilizar casts innecesarios.
+* Aprovechar el tipado para detectar errores antes de runtime.
+
+## 14. Código duplicado
+
+Antes de duplicar código, preguntarse:
+
+> ¿Esto debería ser un componente, función, constante o configuración reutilizable?
+
+Si la respuesta es sí, abstraerlo.
+
+Pero evitar abstraer prematuramente componentes que solamente se utilizan una vez y cuya abstracción reduzca la legibilidad.
+
+## 15. Cambios y mantenimiento
+
+* Antes de modificar un componente existente, entender su propósito y dependencias.
+* No reescribir código que funciona si no es necesario.
+* Mantener compatibilidad con el diseño existente.
+* No solucionar un problema introduciendo otro.
+* Después de realizar cambios importantes, revisar errores de TypeScript/linter y posibles problemas de responsive.
+* Mantener el código preparado para futuras modificaciones.
+
+## 16. Regla principal
+
+Priorizar siempre:
+
+**Simplicidad → Legibilidad → Reutilización → Performance → Escalabilidad**
+
+No sobreingenierizar una landing page.
+
+El objetivo es producir una landing visualmente excelente, rápida, accesible, responsive y fácil de mantener, con una arquitectura limpia y componentes bien definidos.
