@@ -5,12 +5,13 @@ import { lawyer } from '../data/lawyer'
 <template>
   <section
     id="perfil"
-    class="relative overflow-hidden bg-[#EEECE7] text-[#11100F]"
+    class="relative flex min-h-[112svh] bg-[#EEECE7] px-[max(1.25rem,7vw)] py-[clamp(5rem,7vw,7.5rem)] text-[#11100F] max-[720px]:min-h-0 max-[720px]:px-[1.15rem] max-[720px]:py-[5rem]"
     aria-labelledby="about-title"
   >
     <div
-      class="mx-auto grid max-w-[96rem] grid-cols-[minmax(20rem,0.9fr)_minmax(24rem,1fr)] items-center gap-[clamp(5rem,10vw,11rem)] px-[max(1.5rem,7vw)] py-[clamp(6rem,11vw,11rem)] max-[900px]:gap-[clamp(3rem,7vw,5rem)] max-[720px]:grid-cols-1 max-[720px]:px-[1.15rem] max-[720px]:py-[5.5rem]"
+      class="mx-auto grid w-full max-w-[96rem] flex-1 grid-cols-[minmax(20rem,0.9fr)_minmax(24rem,1fr)] items-center gap-[clamp(5rem,10vw,11rem)] max-[900px]:gap-[clamp(3rem,7vw,5rem)] max-[720px]:grid-cols-1"
     >
+
       <!-- IMAGE -->
       <div class="relative min-w-0">
         <div
@@ -33,6 +34,7 @@ import { lawyer } from '../data/lawyer'
 
       <!-- CONTENT -->
       <div class="min-w-0 max-w-[38rem]">
+
         <!-- EYEBROW -->
         <div
           class="mb-[clamp(2.5rem,5vw,4.5rem)] flex items-center gap-3"
@@ -149,6 +151,7 @@ import { lawyer } from '../data/lawyer'
             </p>
           </div>
         </div>
+
       </div>
     </div>
   </section>

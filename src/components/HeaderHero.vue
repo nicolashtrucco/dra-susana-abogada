@@ -46,13 +46,13 @@ const navigationLinks = [
       </div>
 
       <a
-        class="justify-self-end whitespace-nowrap rounded-full bg-[#F7F5F1] px-[1.1rem] py-3 text-[0.66rem] font-medium text-[#11100F] transition duration-200 hover:-translate-y-px hover:bg-[#EAE7E1] motion-reduce:transition-none max-[720px]:px-[0.82rem] max-[720px]:py-[0.68rem] max-[720px]:text-[0.6rem]"
-        :href="lawyer.phone.whatsappUrl"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Contactar por WhatsApp
-      </a>
+  :href="lawyer.phone.whatsappUrl"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="group justify-self-end inline-flex items-center gap-5 whitespace-nowrap rounded-full border border-[#F7F5F1]/80 bg-transparent px-[1.1rem] py-3 text-[0.66rem] font-medium tracking-[0.02em] text-[#F7F5F1] transition duration-200 hover:-translate-y-px hover:bg-[#F7F5F1] hover:text-[#11100F] motion-reduce:transition-none max-[720px]:px-[0.82rem] max-[720px]:py-[0.68rem] max-[720px]:text-[0.6rem]"
+>
+  <span>Contactar por WhatsApp</span>
+</a>
     </nav>
 
     <div
