@@ -2,7 +2,7 @@ export const lawyer = {
   firstName: 'Susana',
   lastName: 'Zulkarneinuff',
   fullName: 'Dra. Susana Zulkarneinuff',
-  brandName: 'DRA. SUSANA',
+  brandName: 'Susana Zulkarneinuff ',
   nickname: 'La Rusa',
   specialty: 'Derecho Penal',
   phone: {
