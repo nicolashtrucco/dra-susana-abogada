@@ -8,6 +8,15 @@ export function setLenisInstance(instance?: Lenis) {
   lenis = instance
 }
 
+export function setLenisLocked(locked: boolean) {
+  if (locked) {
+    lenis?.stop()
+    return
+  }
+
+  lenis?.start()
+}
+
 export function scrollToSection(href: string) {
   const section = document.getElementById(href.replace('#', ''))
   if (!section) return
