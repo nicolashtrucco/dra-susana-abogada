@@ -4,44 +4,44 @@ import { gsap } from 'gsap'
 
 const services = [
   {
-    title: 'Defensa penal',
+    title: 'Estrategias defensivas penales',
     description:
-      'Representación y defensa técnica en todas las etapas del proceso penal.',
+      'Análisis del caso y definición de una defensa eficaz en cada etapa del proceso.',
     image:
       'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=85',
   },
   {
-    title: 'Asesoramiento y estrategia legal',
+    title: 'Asistencia en centros de detención',
     description:
-      'Análisis del caso y definición de una estrategia jurídica acorde a cada situación.',
+      'Acompañamiento y defensa permanente ante situaciones que requieren intervención inmediata.',
     image:
       'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=85',
   },
   {
-    title: 'Denuncias y querellas',
+    title: 'Beneficios excarcelatorios y medidas de libertad',
     description:
-      'Acompañamiento profesional para impulsar o responder acciones penales.',
+      'Gestión ágil de excarcelaciones, morigeraciones y otras medidas vinculadas a la libertad.',
     image:
       'https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1200&q=85',
   },
   {
-    title: 'Excarcelaciones y medidas cautelares',
+    title: 'Urgencias penales · 24 horas',
     description:
-      'Intervención profesional ante medidas que requieren una respuesta jurídica inmediata.',
+      'Atención ante detenciones, allanamientos, imputaciones y demás situaciones urgentes.',
     image:
       'https://images.unsplash.com/photo-1589994965851-a8f479c573a9?auto=format&fit=crop&w=1200&q=85',
   },
   {
-    title: 'Procedimientos penales',
+    title: 'Audiencias imputativas y salidas alternativas',
     description:
-      'Asistencia letrada durante investigaciones, audiencias y juicios orales.',
+      'Defensa técnica desde la audiencia inicial y evaluación de alternativas procesales.',
     image:
       'https://images.unsplash.com/photo-1589578527966-fdac0f44566c?auto=format&fit=crop&w=1200&q=85',
   },
   {
-    title: 'Urgencias penales',
+    title: 'Apelaciones y debates orales',
     description:
-      'Atención profesional ante situaciones que requieren intervención inmediata.',
+      'Intervención en recursos, revisión de resoluciones y defensa durante el juicio oral.',
     image:
       'https://images.unsplash.com/photo-1555374018-13a8994ab246?auto=format&fit=crop&w=1200&q=85',
   },
@@ -126,8 +126,8 @@ onUnmounted(() => {
         <p
           class="mb-1 max-w-[21rem] text-[0.9rem] leading-[1.55] text-[#EAE7E1]/65 max-[800px]:mt-7 max-[800px]:max-w-[25rem] max-[720px]:mt-5 max-[720px]:max-w-[22rem] max-[720px]:text-[0.82rem]"
         >
-          Asistencia y defensa penal con una intervención profesional,
-          estratégica y orientada a cada situación.
+          Defensa penal estratégica en ámbitos provinciales y federales,
+          con asistencia ante urgencias las 24 horas.
         </p>
       </header>
 

@@ -59,7 +59,7 @@ onUnmounted(() => {
           class="relative aspect-[0.76] w-full max-w-[36rem] overflow-hidden bg-[#E1DED7] max-[720px]:mx-auto max-[720px]:max-w-[31rem]"
         >
           <img
-            src="/abogada.jpeg"
+            src="/abogada.jpg"
             :alt="`Retrato de ${lawyer.fullName}, abogada penalista`"
             class="block size-full object-cover object-top"
           />

@@ -1,3 +1,6 @@
+const whatsappMessage =
+  'Hola, Dra. Susana. Quisiera consultar sobre una situación penal.'
+
 export const lawyer = {
   firstName: 'Susana',
   lastName: 'Zulkarneinuff',
@@ -6,8 +9,8 @@ export const lawyer = {
   nickname: 'La Rusa',
   specialty: 'Derecho Penal',
   phone: {
-    display: '+54 9 11 0000-0000',
-    whatsappUrl: 'https://wa.me/5491100000000',
+    display: '+54 9 341 345-3869',
+    whatsappUrl: `https://wa.me/5493413453869?text=${encodeURIComponent(whatsappMessage)}`,
   },
   registrations: {
     provincial: {
