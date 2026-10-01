@@ -25,7 +25,7 @@ const credits = [
       class="mx-auto flex w-full max-w-[96rem] items-center justify-between gap-6 max-[720px]:flex-col max-[720px]:gap-5"
     >
       <p
-        class="text-[0.68rem] tracking-[0.01em] text-[#F7F5F1]/55 max-[720px]:text-center"
+        class="text-[0.68rem] tracking-[0.01em] text-[#F7F5F1]/78 max-[720px]:text-center"
       >
         © {{ currentYear }} {{ lawyer.fullName }}. Todos los derechos
         reservados.

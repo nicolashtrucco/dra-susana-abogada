@@ -124,7 +124,7 @@ onUnmounted(() => {
         </div>
 
         <p
-          class="mb-1 max-w-[21rem] text-[0.9rem] leading-[1.55] text-[#EAE7E1]/65 max-[800px]:mt-7 max-[800px]:max-w-[25rem] max-[720px]:mt-5 max-[720px]:max-w-[22rem] max-[720px]:text-[0.82rem]"
+          class="mb-1 max-w-[21rem] text-[0.9rem] leading-[1.55] text-[#F7F5F1]/90 max-[800px]:mt-7 max-[800px]:max-w-[25rem] max-[720px]:mt-5 max-[720px]:max-w-[22rem] max-[720px]:text-[0.82rem]"
         >
           Defensa penal estratégica en ámbitos provinciales y federales,
           con asistencia ante urgencias las 24 horas.
@@ -167,7 +167,7 @@ onUnmounted(() => {
                 </h3>
 
                 <p
-                  class="mt-2.5 max-w-[34rem] text-[0.82rem] leading-[1.5] text-[#EAE7E1]/50 max-[720px]:text-[0.78rem]"
+                  class="mt-2.5 max-w-[34rem] text-[0.82rem] leading-[1.5] text-[#F7F5F1]/82 max-[720px]:text-[0.78rem]"
                 >
                   {{ service.description }}
                 </p>

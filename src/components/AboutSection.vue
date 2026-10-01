@@ -59,7 +59,7 @@ onUnmounted(() => {
           class="relative aspect-[0.76] w-full max-w-[36rem] overflow-hidden bg-[#E1DED7] max-[720px]:mx-auto max-[720px]:max-w-[31rem]"
         >
           <img
-            src="/abogada.jpg"
+            src="/abogada.png"
             :alt="`Retrato de ${lawyer.fullName}, abogada penalista`"
             class="block size-full object-cover object-top"
           />
@@ -101,13 +101,13 @@ onUnmounted(() => {
           id="about-title"
           class="max-w-[34rem] text-[clamp(3.8rem,6.5vw,7rem)] font-normal leading-[0.84] tracking-[-0.08em] max-[720px]:max-w-[20rem] max-[720px]:break-words max-[720px]:text-[clamp(3.5rem,16vw,5.2rem)] max-[720px]:leading-[0.84]"
         >
-          {{ lawyer.firstName }}
-          <span class="text-[#11100F]">{{ lawyer.lastName }}.</span>
+          Dra. {{ lawyer.firstName }}
+          <span class="text-[#11100F]">{{ lawyer.lastName }}</span>
         </h2>
 
         <!-- INTRO -->
         <div
-          class="mt-[clamp(2.75rem,5vw,4.5rem)] max-w-[34rem] text-[clamp(1.05rem,1.35vw,1.2rem)] leading-[1.55] text-[#3D3935] max-[720px]:mt-7 max-[720px]:text-[0.96rem] max-[720px]:leading-[1.5]"
+          class="mt-[clamp(2.75rem,5vw,4.5rem)] max-w-[34rem] text-[clamp(1.05rem,1.35vw,1.2rem)] leading-[1.55] text-[#2A2724] max-[720px]:mt-7 max-[720px]:text-[0.96rem] max-[720px]:leading-[1.5]"
         >
           <p>
             Abogada especializada en Derecho Penal, con más de 25 años de
@@ -134,7 +134,7 @@ onUnmounted(() => {
           </p>
 
           <p
-            class="mt-2 text-[0.92rem] leading-[1.5] text-[#55514B] max-[720px]:text-[0.86rem]"
+            class="mt-2 text-[0.92rem] leading-[1.5] text-[#2A2724] max-[720px]:text-[0.86rem]"
           >
             Análisis riguroso de cada caso, definición de estrategias jurídicas
             y protección de los derechos y garantías de sus representados.

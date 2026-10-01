@@ -75,7 +75,7 @@ onUnmounted(() => {
             </h2>
 
             <p
-              class="mt-[clamp(2rem,3.5vw,3.25rem)] max-w-[31rem] text-[clamp(1rem,1.25vw,1.15rem)] leading-[1.55] text-[#3D3935] max-[720px]:mt-6 max-[720px]:max-w-[28rem] max-[720px]:text-[0.94rem] max-[720px]:leading-[1.5]"
+              class="mt-[clamp(2rem,3.5vw,3.25rem)] max-w-[31rem] text-[clamp(1rem,1.25vw,1.15rem)] leading-[1.55] text-[#2A2724] max-[720px]:mt-6 max-[720px]:max-w-[28rem] max-[720px]:text-[0.94rem] max-[720px]:leading-[1.5]"
             >
               Si necesitás asesoramiento o defensa penal,
               podés comunicarte directamente para conversar
