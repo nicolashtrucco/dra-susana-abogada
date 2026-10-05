@@ -54,7 +54,7 @@ onUnmounted(() => {
       class="mx-auto grid w-full max-w-[96rem] flex-1 grid-cols-[minmax(0,0.9fr)_minmax(0,1fr)] items-center gap-[clamp(5rem,10vw,11rem)] max-[900px]:gap-[clamp(3rem,7vw,5rem)] max-[720px]:grid-cols-1 max-[720px]:gap-0"
     >
       <!-- IMAGE -->
-      <div class="about-image relative min-w-0 max-[720px]:order-1">
+      <div class="about-image relative min-w-0 max-[720px]:hidden">
         <div
           class="relative aspect-[0.76] w-full max-w-[36rem] overflow-hidden bg-[#E1DED7] max-[720px]:mx-auto max-[720px]:max-w-[31rem]"
         >
@@ -75,7 +75,7 @@ onUnmounted(() => {
 
       <!-- CONTENT -->
       <div
-        class="about-content min-w-0 max-w-[38rem] max-[720px]:order-2 max-[720px]:mt-12"
+        class="about-content min-w-0 max-w-[38rem]"
       >
         <!-- EYEBROW -->
         <div

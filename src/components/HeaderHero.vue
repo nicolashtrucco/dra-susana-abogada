@@ -29,7 +29,7 @@ onUnmounted(() => {
   <header
     ref="hero"
     id="inicio"
-    class="relative isolate grid min-h-[max(520px,100svh)] grid-rows-[auto_1fr_auto] overflow-x-clip overflow-y-hidden bg-[url('/HeaderAbogada.png')] bg-cover bg-center text-[#F7F5F1] max-[1024px]:min-h-svh max-[1024px]:overflow-y-visible max-[1024px]:bg-[position:45%_center] max-[720px]:grid-rows-[auto_1fr] max-[720px]:bg-[position:52%_center]"
+    class="relative isolate grid min-h-[max(520px,100svh)] grid-rows-[auto_1fr_auto] overflow-x-clip overflow-y-hidden bg-[url('/HeaderAbogada01.png')] bg-cover bg-center text-[#F7F5F1] max-[1024px]:min-h-svh max-[1024px]:overflow-y-visible max-[1024px]:bg-[position:45%_center] max-[720px]:grid-rows-[auto_1fr] max-[720px]:bg-[url('/abogada.png')] max-[720px]:bg-[position:52%_center]"
   >
     <!-- Overlay -->
     <div
