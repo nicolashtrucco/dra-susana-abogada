@@ -54,7 +54,7 @@ onUnmounted(() => {
         href="#servicios"
         class="hero-cta inline-flex gap-[0.65rem] border-b border-[#D0BC8D]/80 pb-[0.3rem] text-[0.87rem] transition-colors duration-200 hover:text-[#D0BC8D] motion-reduce:transition-none"
       >
-        Conocer mis servicios
+        Conocé mis servicios
         <span
           class="icon-arrow text-[1rem] leading-[0.75] text-[#B69A63]"
           aria-hidden="true"
@@ -114,8 +114,7 @@ onUnmounted(() => {
           <a
             href="#servicios"
             class="hero-cta mt-5 inline-flex gap-[0.65rem] border-b border-[#D0BC8D]/80 pb-[0.3rem] text-[0.8rem] transition-colors duration-200 hover:text-[#D0BC8D] motion-reduce:transition-none"
-          >
-            Conocer mis servicios
+          > Conocé mis servicios
             <span
               class="icon-arrow text-[1rem] leading-[0.75] text-[#B69A63]"
               aria-hidden="true"
