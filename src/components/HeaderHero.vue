@@ -38,6 +38,10 @@ onUnmounted(() => {
     <div
       class="pointer-events-none absolute inset-0 bg-linear-to-t from-black/47 to-transparent"
     />
+    <div
+      class="pointer-events-none absolute inset-0 hidden bg-black/40 max-[720px]:block"
+      aria-hidden="true"
+    />
 
     <div class="h-[5.5rem] max-[720px]:h-20" aria-hidden="true" />
 
